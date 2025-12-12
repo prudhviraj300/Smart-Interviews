@@ -1,0 +1,40 @@
+// Print the array in reverse order.
+
+// Note: 
+//  Try solving this using recursion. Do not use any inbuilt functions / libraries for your main logic.  Input Format
+// The first line of input contains N - the size of the array and the second line contains the elements of the array.
+
+// Output Format
+// Print the given array in reverse order.
+
+// Constraints
+// 1 <= N <= 100
+// 0 <= ar[i] <= 1000
+
+// Example
+// Input
+// 5
+// 2 19 8 15 4
+
+// Output
+// 4 15 8 19 2
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n;
+    cin >> n;
+    int arr[n];
+
+    for(int i = 0; i < n; i++){
+        cin >> arr[n - i - 1];
+    }
+
+    for(int i = 0; i < n; i++){
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
